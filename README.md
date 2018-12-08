@@ -1,6 +1,6 @@
 ## Jupyter-Mojave-theme
 
-### Sophisticated Dark theme for Pupyter Notebook
+### Sophisticated Dark theme for Jupyter Notebook
 
 
 ![editor screen shot 1](img/editor1.png) <br />
