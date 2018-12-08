@@ -1424,35 +1424,12 @@ div.output.output_scroll {
  background-clip: content-box;
  width: 11px;
 }
-HTML,
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-input,
-button,
-textarea,
-p,
-blockquote,
-th,
-td,
-span,
-a {
+HTML, body, div, p, span, a,
+dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6,
+pre, code, blockquote,
+form, fieldset, legend, input, button, textarea,
+th, td {
  text-rendering: geometricPrecision;
  -webkit-font-smoothing: subpixel-antialiased;
  font-weight: 400;
