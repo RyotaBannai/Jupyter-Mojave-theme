@@ -11,7 +11,7 @@
 
 ![editor screen shot 4](img/ext.png) <br />
 
-### How to apply this theme
+### How to apply
 
 1. Make 'cumtom folder under .jupyter folder'
 2. Add this 'mojave.css' in the folder
