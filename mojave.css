@@ -11,14 +11,14 @@ div.body {
  font-family: sans-serif;
  font-size: 13pt;
  color: #f8f8f0;
- background-color: #1e1e1e;
- background: #1e1e1e;
+ background-color: #2e2e2e;
+ background: #2e2e2e;
  -webkit-font-smoothing: antialiased !important;
 }
 body.notebook_app {
  padding: 0;
- background-color: #1e1e1e;
- background: #1e1e1e;
+ background-color: #2a2a2a;
+ background: #2a2a2a;
  padding-right: 0px !important;
  overflow-y: hidden;
 }
@@ -228,15 +228,15 @@ span#login_widget > .button.active,
  border-radius: 2px;
 }
 body > #header #header-container {
- padding-bottom: 0px;
- padding-top: 6px;
+ margin-left: 6px;
+ padding: 6px 0 0 0;
  box-sizing: border-box;
  -moz-box-sizing: border-box;
  -webkit-box-sizing: border-box;
 }
 body > #header {
- background: #1e1e1e;
- background-color: #1e1e1e;
+ background: #2a2a2a;
+ background-color: #2a2a2a;
  position: relative;
  z-index: 100;
 }
@@ -449,13 +449,14 @@ div#notebook {
 }
 #notebook-container {
  padding: 13px 2px;
- background-color: #1e1e1e;
+ background-color: #222;
  min-height: 0px;
  box-shadow: none;
  margin-right: auto;
  margin-left: auto;
  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.5);
  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.5);
+ border-radius: 8px;
 }
 @media only screen and (max-width: 980px) {
     #notebook-container  {
@@ -483,8 +484,8 @@ div#ipython-main-app.container {
 div#menubar-container {
  width: 100%;
  width: 980px;
-     -webkit-box-shadow: 0px 8px 12px -5px rgba(87, 87, 87, 0.3);
-    box-shadow: 0px 8px 12px -5px rgba(87, 87, 87, 0.3);
+     -webkit-box-shadow: 0px 8px 12px -5px rgba(87, 87, 87, 0.7);
+    box-shadow: 0px 8px 12px -5px rgba(87, 87, 87, 0.7);
 }
 div#header-container {
  width: 980px;
@@ -512,7 +513,7 @@ div#header-container {
 }
 body > #header .header-bar {
  width: 100%;
- background: #1e1e1e;
+ background: rgba(46, 134, 193, 0.3);
 }
 span.checkpoint_status,
 span.autosave_status {
@@ -710,7 +711,7 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
     color: #2E86C1;
     border-left: 2px solid #2E86C1;
     padding: 0px 10px !important;
-    margin: 2px 0 2px 5px !important;
+    margin: 0px 0 0px 5px !important;
     align-items: center;
     justify-content: center;
 }
@@ -1435,8 +1436,8 @@ th, td {
  font-weight: 400;
 }
 div.input_area {
- background-color: #282828;
- background: #282828;
+ background-color: #2a2a2a;
+ background: #2a2a2a;
  padding-right: 1.2em;
  border: 0px;
  border-radius: 0px;
@@ -1447,14 +1448,14 @@ div.cell {
  padding: 0px;
  background: #282828;
  background-color: #282828;
- border: medium solid #1e1e1e;
+ border: medium solid #222;
  border-radius: 4px;
  top: 0;
 }
 div.cell.selected {
  background: #282828;
  background-color: #282828;
- border: medium solid #1e1e1e;
+ border: medium solid #222;
  padding: 0px;
  border-radius: 5px;
 }
@@ -1462,7 +1463,7 @@ div.cell.selected {
  padding: 0px;
  background: #282828;
  background-color: #282828;
- border: medium solid #1e1e1e;
+ border: medium solid #222;
  border-radius: 5px;
 }
 div.cell.edit_mode {
@@ -1502,23 +1503,24 @@ div.cell.text_cell.selected.jupyter-soft-selected:before {
  border-color: #57564b !important;
 }
 div.cell.code_cell .input {
- border-left: 5px solid #282828 !important;
- border-radius: 3px;
- border-bottom-left-radius: 3px;
- border-top-left-radius: 3px;
+ border-left: 4px solid #282828 !important;
+ border-radius: 0px;
+ border-bottom-left-radius: 0px;
+ border-top-left-radius: 0px;
 }
 div.cell.code_cell.selected .input {
- border-left: 5px solid rgba(93,92,82,.25) !important;
- border-radius: 3px;
+ border-left: 4px solid rgba(93,92,82,.25) !important;
+ border-radius: 0px;
 }
 .edit_mode div.cell.code_cell.selected .input {
- border-left: 5px solid #33322b !important;
- border-radius: 3px;
+ border-left: 4px solid #33322b !important;
+ border-radius: 0px;
 }
+
 .edit_mode div.cell.selected:before {
  height: 100%;
- border-left: 5px solid #33322b !important;
- border-radius: 3px;
+ border-left: 4px solid #33322b !important;
+ border-radius: 0px;
 }
 div.cell.jupyter-soft-selected,
 div.cell.selected.jupyter-soft-selected {
@@ -1538,10 +1540,6 @@ div.cell.selected.jupyter-soft-selected {
  border-color: #1e1e1e;
  padding-left: 7px;
  border-radius: 6px;
-}
-div.cell.code_cell.selected .input {
- border-left: none;
- border-radius: 3px;
 }
 div.cell.selected.jupyter-soft-selected .prompt,
 div.cell.text_cell.selected.jupyter-soft-selected .prompt {
@@ -1566,8 +1564,7 @@ div.cell.jupyter-soft-selected .input,
 div.cell.selected.jupyter-soft-selected .input {
  border-left-color: #33322b !important;
 }
-div.prompt,
-.prompt {
+div.prompt, .prompt {
  font-family: monospace, monospace;
  font-size: 9pt !important;
  font-weight: normal;
@@ -1578,25 +1575,26 @@ div.prompt,
  padding-left: 0px;
  padding-right: 1px;
  text-align: right !important;
- min-width: 11.5ex !important;
- width: 11.5ex !important;
+ min-width: 12.5ex;
+ width: 12.5ex;
 }
 div.prompt.input_prompt {
- font-size: 9pt !important;
+ /*font-size: 9pt !important;*/
  background-color: #232323;
  border-top: 0px;
  border-top-right-radius: 0px;
  border-bottom-left-radius: 0px;
  border-bottom-right-radius: 0px;
  padding-right: 3px;
- min-width: 11.5ex;
- width: 11.5ex !important;
+ min-width: 12.1ex;
+ width: 12.1ex;
 }
 div.cell.code_cell .input_prompt {
  border-right: 2px solid rgba(93,92,82,.25);
 }
 div.cell.selected .prompt {
  top: 0;
+ background-color: #282828;
 }
 .edit_mode div.cell.selected .prompt {
  top: 0;
@@ -1632,6 +1630,7 @@ div.cell.code_cell.rendered.unselected .run_this_cell:hover {
 i.fa-step-forward.fa {
  display: inline-block;
  font: normal normal normal 9px "FontAwesome";
+ vertical-align: middle;
 }
 .fa-step-forward:before {
  content: "\f04b";
@@ -1710,20 +1709,20 @@ div.prompt.output_prompt {
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 11.5ex !important;
- width: 11.5ex !important;
+ min-width: 12.4ex;
+ width: 12.4ex;
  border-right: 2px solid transparent;
 }
 div.out_prompt_overlay.prompt {
  font-family: monospace, monospace;
  font-weight: bold !important;
  background-color: #232323;
- border-bottom-left-radius: 2px;
+ border-bottom-left-radius: 0px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 11.5ex !important;
- width: 11.5ex !important;
+ min-width: 12.4ex !important;
+ width: 12.4ex;
  border-right: 2px solid transparent;
  color: transparent;
 }
@@ -1731,14 +1730,11 @@ div.out_prompt_overlay.prompt:hover {
  background-color: rgba(93,92,82,.25);
  box-shadow: none !important;
  border: none;
- border-bottom-left-radius: 2px;
- -webkit-border-: 2px;
- -moz-border-radius: 2px;
+ border-bottom-left-radius: 0px;
+ -webkit-border-: 0px;
+ -moz-border-radius: 0px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
- min-width: 12.4ex !important;
- width: 12.4ex !important;
- border-right: 2px solid rgba(93,92,82,.25) !important;
 }
 div.cell.code_cell .output_prompt {
  border-right: 2px solid transparent;
@@ -1746,13 +1742,15 @@ div.cell.code_cell .output_prompt {
 }
 div.cell.selected .output_prompt,
 div.cell.selected .out_prompt_overlay.prompt {
- border-left: 5px solid #33322b;
- border-right: 2px solid #232323;
- border-radius: 0px !important;
+border-left: 4px solid rgba(93,92,82,.25);
+    border-right: 2px solid rgba(93,92,82,.25);
+    border-radius: 0px !important;
+    min-width: 12.4ex !important;
+    width: 12.4ex;
 }
 .edit_mode div.cell.selected .output_prompt,
 .edit_mode div.cell.selected .out_prompt_overlay.prompt {
- border-left: 5px solid #33322b;
+ border-left: 4px solid #33322b;
  border-right: 2px solid #232323;
  border-radius: 0px !important;
 }
@@ -1824,8 +1822,8 @@ div.edit_mode div.text_cell.unrendered {
 }
 div.cell.text_cell .prompt {
  border-right: 0;
- min-width: 11.5ex !important;
- width: 11.5ex !important;
+ min-width: 12.1ex;
+ width: 12.1ex;
 }
 div.cell.text_cell.rendered .prompt {
  font-family: monospace, monospace;
@@ -1833,8 +1831,7 @@ div.cell.text_cell.rendered .prompt {
  font-weight: normal;
  color: #75715e !important;
  text-align: right !important;
- min-width: 11.7ex !important;
-width: 11.7ex !important;
+ width: 12.2ex;
  background-color: #212121;;
  border-right: 2px solid #49483e;
  border-left: 4px solid #282828;
@@ -1845,8 +1842,8 @@ div.cell.text_cell.unrendered .prompt {
  font-weight: normal;
  color: #75715e !important;
  text-align: right !important;
- min-width: 11.7ex !important;
- width: 11.7ex !important;
+ min-width: 12.1ex !important;
+ width: 12.1ex !important;
  border-right: 2px solid #49483e;
  border-left: 4px solid #282828;
  background-color: #282828;
@@ -2499,7 +2496,7 @@ div#toc-wrapper {
  border-right-width: medium !important;
  /*background-color: #1e1e1e !important;*/
  background-color: #2f2f2f !important;
- top: 105px !important;
+ top: 100px !important;
  left: 3px;
  padding: 10px 15px;
 }
@@ -2886,7 +2883,7 @@ div.CodeMirror pre {
 div.CodeMirror-lines {
  padding-bottom: .9em;
  padding-left: .5em;
- padding-right: 1.5em;
+ padding-right: .5em;
  padding-top: .7em;
 }
 span.ansiblack,
@@ -2978,9 +2975,9 @@ div.tooltiptext.bigtooltip {
 .cm-s-ipython.CodeMirror {
  font-family: monospace, monospace;
  font-size: 11pt;
- background: #232323;
+ background: #262626;
  color: #f8f8f0;
- border-radius: 2px;
+ border-radius: 0px;
  font-style: normal;
  font-weight: normal;
 }
@@ -3219,7 +3216,7 @@ div#maintoolbar {
     border-left: solid 3px rgba(40, 116, 166, 0.9) !important;
 }
 div.text_cell, div.text_cell_render pre, div.text_cell_render{
-    background-color: #1e1e1e;
+    background-color: #222;
 }
 div.CodeMirror, div.CodeMirror pre{
     line-height: 1.1em !important;
@@ -3247,9 +3244,6 @@ span#login_widget + span.save_widget > #notebook_name:hover {
 .nav > li > a {
     padding: 10px 10px;
 }
-body > #header #header-container {
-    margin-left: 6px;
-}
 div#menubar-container, div#header-container {
     padding-left: 6px !important;
 }
@@ -3275,6 +3269,13 @@ div#navigate_menu ul.toc-item li > span:first-child{
 div#navigate_menu ul.toc-item li > span a{
     font-size:15px
 }
+/*end*/
+div#site{
+    background-color: #222;
+}
+.toolbar{
+ margin-top: 0px;
+}
 
 <script>
     MathJax.Hub.Config({
@@ -3288,11 +3289,6 @@ div#navigate_menu ul.toc-item li > span a{
                 }
             }
         }
-    });
-    $(function() {
-        $(".fa-caret-down").click(function(e) { 
-            e.stopPropagation();
-        });​
     });
 </script>
     
