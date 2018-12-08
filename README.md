@@ -13,10 +13,11 @@
 
 ### How to apply
 
-1. Make 'cumtom folder under .jupyter folder'
+1. Make 'cumtom' folder under .jupyter folder
 2. Add this 'mojave.css' in the folder
 3. Change the file name 'mojave.css' to 'custom.css'
 4. Refresh local browser or restart Jupyter Notebook
+5. Ready to use!
 
 ### Contact me
 
