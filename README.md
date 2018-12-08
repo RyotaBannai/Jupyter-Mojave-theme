@@ -5,7 +5,7 @@
 
 ![editor screen shot 1](img/editor1.png) <br />
 
-![editor screen shot 2](img/editor1.png) <br />
+![editor screen shot 2](img/editor2.png) <br />
 
 ![editor screen shot 3](img/tree.png) <br />
 
