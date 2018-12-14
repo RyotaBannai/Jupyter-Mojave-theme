@@ -186,19 +186,21 @@ div#notebook_toolbar div.dynamic-instructions {
  color: #75715e;
 }
 span#login_widget > .button, #logout {
- font-family: "Proxima Nova", sans-serif;
- color: #f8f8f0;
- background: transparent;
- background-color: transparent;
- border: 2px solid #2f2f2f;
- font-weight: normal;
- box-shadow: none;
- text-shadow: none;
- border-radius: 3px;
- margin-right: 10px;
- padding: 2px 7px;
- transition: 20ms ease;
- -webkit-transition: 0.2s; /* Safari */
+font-size: 0.9em;
+    font-family: "Proxima Nova", sans-serif;
+    color: #f8f8f0;
+    background: transparent;
+    background-color: transparent;
+    border: 2px solid #2f2f2f;
+    font-weight: normal;
+    box-shadow: none;
+    text-shadow: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    padding: 0px 7px;
+    transition: 20ms ease;
+    -webkit-transition: 0.2s;
 }
 span#login_widget > .button:hover, #logout:hover {
  color: #2E86C1;
@@ -228,11 +230,11 @@ span#login_widget > .button.active,
  border-radius: 2px;
 }
 body > #header #header-container {
- margin-left: 6px;
- padding: 6px 0 0 0;
+ padding: 4px 0 2px 0;
  box-sizing: border-box;
  -moz-box-sizing: border-box;
  -webkit-box-sizing: border-box;
+ border-bottom: 1px solid rgba(46, 134, 193, 0.2);
 }
 body > #header {
  background: #2a2a2a;
@@ -690,7 +692,7 @@ div.notification_area {
      align-items: center;
     justify-content: center;
  cursor: pointer;
-  margin: 2px 0 0 0;
+  margin: 4px 0 0 0;
  padding-right: 7px;
 }
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
@@ -711,7 +713,7 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
     color: #2E86C1;
     border-left: 2px solid #2E86C1;
     padding: 0px 10px !important;
-    margin: 0px 0 0px 5px !important;
+    margin: 4px 0 0px 5px !important;
     align-items: center;
     justify-content: center;
 }
@@ -790,8 +792,8 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn:focus {
  display: none;
 }
 div#ipython_notebook {
- /*display: none;*/
  display: block;
+ padding: 1px 0 1px 7px;
 }
 i.fa.fa-icon {
  -webkit-font-smoothing: antialiased;
@@ -1323,7 +1325,7 @@ div.container-fluid {
  margin-right: auto;
  margin-left: auto;
  padding-left: 0px;
- padding-right: 5px;
+ padding-right: 0px;
 }
 div.form-control,
 .form-control {
@@ -1721,8 +1723,8 @@ div.out_prompt_overlay.prompt {
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 12.4ex !important;
- width: 12.4ex;
+ min-width: 12.9ex !important;
+ width: 12.9ex;
  border-right: 2px solid transparent;
  color: transparent;
 }
@@ -1745,14 +1747,16 @@ div.cell.selected .out_prompt_overlay.prompt {
 border-left: 4px solid rgba(93,92,82,.25);
     border-right: 2px solid rgba(93,92,82,.25);
     border-radius: 0px !important;
-    min-width: 12.4ex !important;
-    width: 12.4ex;
+    min-width: 12.9ex ;
+    width: 12.9ex;
 }
 .edit_mode div.cell.selected .output_prompt,
 .edit_mode div.cell.selected .out_prompt_overlay.prompt {
- border-left: 4px solid #33322b;
- border-right: 2px solid #232323;
+ border-left: 4px solid rgba(93,92,82,.25);
+ border-right: 2px solid rgba(93,92,82,.25);
  border-radius: 0px !important;
+ min-width: 12.9ex;
+    width: 12.9ex;
 }
 div.text_cell, div.text_cell_render pre, div.text_cell_render {
     font-family: sans-serif;
@@ -1982,7 +1986,7 @@ div.rendered_html h5 {
 .rendered_html h1,
 .text_cell_render h1 {
  color: rgba(46, 134, 193, 0.8) !important;
- font-size: 200%;
+ font-size: 180%;
  text-align: left;
  font-style: normal;
  font-weight: normal;
@@ -1990,14 +1994,14 @@ div.rendered_html h5 {
 .rendered_html h2,
 .text_cell_render h2 {
  color: rgba(46, 134, 193, 0.8) !important;
- font-size: 170%;
+ font-size: 160%;
  font-style: normal;
  font-weight: normal;
 }
 .rendered_html h3,
 .text_cell_render h3 {
  color: rgba(46, 134, 193, 0.8) !important;
- font-size: 140%;
+ font-size: 130%;
  font-style: normal;
  font-weight: normal;
 }
@@ -3017,6 +3021,7 @@ div.CodeMirror-linenumber,
 .CodeMirror-linenumber {
  color: #75715e;
 }
+/*Cursor color data*/
 .cm-s-ipython .CodeMirror-cursor {
  border-left: 2px solid #0095ff !important;
 }
@@ -3038,8 +3043,9 @@ div.CodeMirror-linenumber,
 }
 .cm-s-ipython span.cm-keyword {
  /*color: #f92672; red*/
- color: #196F3D    line-height: 1.1em;;
- font-weight: normal;
+ color: #196F3D;
+ line-height: 1.1em;
+ font-weight: bold;
 }
 .cm-s-ipython span.cm-string {
  color: #e6db74;
@@ -3209,8 +3215,7 @@ div#maintoolbar {
  display: none !important;
 }*/
 #header-container {
- /*display: none !important;*/
- display: block !important;
+ display: block;
 }
 .highlight_on_scroll {
     border-left: solid 3px rgba(40, 116, 166, 0.9) !important;
@@ -3275,6 +3280,13 @@ div#site{
 }
 .toolbar{
  margin-top: 0px;
+}
+#ipython_notebook img {
+    height: 27px;
+}
+#maintoolbar-container>div.btn-group>button {
+    display: flex;
+    height: 30px;
 }
 
 <script>
